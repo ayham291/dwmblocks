@@ -11,10 +11,11 @@ static const Block blocks[] = {
 	/* {"",	"sb-price bat \"Basic Attention Token\" 🦁",	9000,	20}, */
 	/* {"",	"sb-price link \"Chainlink\" 🔗",			300,	25}, */
 	/* {"",	"sb-price xmr \"Monero\" 🔒",			9000,	24}, */
-	/* {"",	"sb-price eth Ethereum 🍸",	9000,	23}, */
+	{"",	"sb-price eth Ethereum 🍸 eur",	9000,	23},
 	/* {"",	"sb-price btc Bitcoin 💰",				9000,	21}, */
 	{"",	"sb-cpugpu",	1,	18},
-	{"",	"sb-backlight",	1,	18},
+    {"",	"sb-blt",		1,	17},
+	{"",	"sb-backlight",	0,	11},
 	/* {"",	"sb-memory",	10,	14}, */
 	/* {"",	"sb-cpu",		1,	18}, */
 	/* {"",	"sb-moonphase",	18000,	17}, */
@@ -24,7 +25,7 @@ static const Block blocks[] = {
 	{"",	"sb-volume",	0,	10},
 	{"",	"sb-battery",	1,	3},
 	{"",	"sb-clock",	60,	1},
-	{"",	"sb-wpagui",	5,	4},
+	{"",	"sb-wpagui",	5,	5},
 	{"",	"sb-internet",	5,	4},
 };
 
@@ -35,3 +36,4 @@ static char *delim = " ";
 // vim with the following line in your vimrc/init.vim:
 
 // autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid dwmblocks & }
+
